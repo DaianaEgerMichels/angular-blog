@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class MenuTitleComponent implements OnInit {
 
   text = "Daiana Eger Michels";
-  result: HTMLElement | null = null;
+  title: HTMLElement | null = null;
 
   count = 0;
 
@@ -18,14 +18,14 @@ export class MenuTitleComponent implements OnInit {
 
   // Insert letters one by one
   toType() {
-    this.result = document.getElementById("title");
-    if (this.result) {
+    this.title = document.getElementById("title");
+    if (this.title) {
       setTimeout(() => this.insert(this.text[this.count]), 200);
     }
   }
   insert(letter: string) {
-    if (this.result) {
-      this.result.innerHTML += letter;
+    if (this.title) {
+      this.title.innerHTML += letter;
       this.count++;
       if (this.count < this.text.length) {
         setTimeout(() => this.insert(this.text[this.count]), 200);
