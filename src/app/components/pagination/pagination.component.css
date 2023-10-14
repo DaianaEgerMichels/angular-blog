@@ -1,0 +1,26 @@
+.container__pagination {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.pagination__back,
+.pagination__next {
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.pagination_pages button {
+  background-color: transparent;
+  border: none;
+  font-size: 1rem;
+  margin: 0 0.5rem;
+  cursor: pointer;
+}
+
+.pagination_pages button.current__page {
+  background-color: black;
+  color: white;
+  padding: 0.5rem 0.75rem;
+  border-radius: 5px;
+}

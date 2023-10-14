@@ -7,4 +7,5 @@ import { Component } from '@angular/core';
 })
 export class MenuBarComponent {
 
+  // <a href='mailto:daianaem.12@gmail.com' target='_blank'>Contact-me</a>
 }
