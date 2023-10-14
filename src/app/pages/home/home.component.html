@@ -1,15 +1,69 @@
-<app-menu-bar></app-menu-bar>
+<header>
+  <app-menu-bar></app-menu-bar>
+</header>
 <div class="container">
   <app-menu-title></app-menu-title>
-  <app-big-card></app-big-card>
+  <app-big-card
+    cardLabel="Daiana Michels"
+    cardTitle="Full Stack Developer"
+    cardDescription="Currently working as a Full Stack Developer at Pixeon."
+  ></app-big-card>
   <div class="container__articles">
     <div class="articles">
-      <app-small-card></app-small-card>
-      <app-small-card></app-small-card>
-      <app-small-card></app-small-card>
-      <app-small-card></app-small-card>
-      <app-small-card></app-small-card>
-      <app-small-card></app-small-card>
+      <app-small-card
+        photoCover="../../../assets/me.jpg"
+        photoAlt="me"
+        cardAuthor="Daiana Michels • 14/10/2023"
+        cardTitle="Full Stack Developer"
+        cardDescription="Currently working as a Full Stack Developer at Pixeon."
+        [buttons]="['Read More', 'Code']"
+      >
+      </app-small-card>
+      <app-small-card
+        photoCover="../../../assets/me.jpg"
+        photoAlt="me"
+        cardAuthor="Daiana Michels • 14/10/2023"
+        cardTitle="Full Stack Developer"
+        cardDescription="Currently working as a Full Stack Developer at Pixeon."
+        [buttons]="['Read More', 'Code']"
+      >
+      </app-small-card>
+      <app-small-card
+        photoCover="../../../assets/me.jpg"
+        photoAlt="me"
+        cardAuthor="Daiana Michels • 14/10/2023"
+        cardTitle="Full Stack Developer"
+        cardDescription="Currently working as a Full Stack Developer at Pixeon."
+        [buttons]="['Read More', 'Code']"
+      >
+      </app-small-card>
+      <app-small-card
+        photoCover="../../../assets/me.jpg"
+        photoAlt="me"
+        cardAuthor="Daiana Michels • 14/10/2023"
+        cardTitle="Full Stack Developer"
+        cardDescription="Currently working as a Full Stack Developer at Pixeon."
+        [buttons]="['Read More', 'Code']"
+      >
+      </app-small-card>
+      <app-small-card
+        photoCover="../../../assets/me.jpg"
+        photoAlt="me"
+        cardAuthor="Daiana Michels • 10/10/2023"
+        cardTitle="Full Stack Developer"
+        cardDescription="Currently working as a Full Stack Developer at Pixeon."
+        [buttons]="['Read More', 'Code']"
+      >
+      </app-small-card>
+      <app-small-card
+        photoCover="../../../assets/me.jpg"
+        photoAlt="me"
+        cardAuthor="Daiana Michels • 01/10/2023"
+        cardTitle="Full Stack Developer"
+        cardDescription="Currently working as a Full Stack Developer at Pixeon."
+        [buttons]="['Read More', 'Code']"
+      >
+      </app-small-card>
     </div>
     <app-pagination></app-pagination>
   </div>

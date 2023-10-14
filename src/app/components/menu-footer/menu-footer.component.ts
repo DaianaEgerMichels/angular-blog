@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class MenuFooterComponent {
 
+  contactMe(): void {
+    const url = "https://wa.me/5548998136262";
+    window.open(url, "_blank");
+  }
 }

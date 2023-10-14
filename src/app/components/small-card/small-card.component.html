@@ -1,19 +1,18 @@
 <div class="container__small-card">
   <div class="content-image">
-    <img src="../../../assets/me.jpg" alt="me" />
+    <img src="{{ photoCover }}" alt="{{ photoAlt}}" />
   </div>
   <div class="content-info">
     <div class="author">
-      <h4>Author • Data</h4>
+      <h4>{{ cardAuthor }}</h4>
     </div>
     <div class="title">
-      <h1>Titulo do card</h1>
+      <h1>{{ cardTitle }}</h1>
       <button>↗</button>
     </div>
-    <p>Descrição breve sobre o conteudo</p>
+    <p>{{ cardDescription }}</p>
     <div class="buttons">
-      <button>Code</button>
-      <button>Details</button>
+      <button buttons="buttons" *ngFor="let button of buttons">{{ button }}</button>
     </div>
   </div>
 </div>
