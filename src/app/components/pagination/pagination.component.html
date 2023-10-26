@@ -1,9 +1,7 @@
 <div class="container__pagination">
-  <div class="pagination__back">←  Previous</div>
+  <div class="pagination__back" (click)="goToPreviousPage()">← Previous</div>
   <div class="pagination_pages">
-    <button>1</button>
-    <button class="current__page">2</button>
-    <button>3</button>
+    <button *ngFor="let page of pagesArray" [class.current__page]="page === currentPage" (click)="pageChange.emit(page)">{{ page }}</button>
   </div>
-  <div class="pagination__next">Next  →</div>
+  <div class="pagination__next" (click)="goToNextPage()">Next →</div>
 </div>

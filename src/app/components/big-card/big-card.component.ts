@@ -21,4 +21,12 @@ export class BigCardComponent  implements OnInit {
     
   }
 
+  about(): void {
+    window.open("https://daiana-eger-michels-portfolio.netlify.app/", "_blank");
+  }
+
+  contact(): void {
+    window.open("mailto:daianaem.12@gmail.com", "_blank");
+  }
+
 }

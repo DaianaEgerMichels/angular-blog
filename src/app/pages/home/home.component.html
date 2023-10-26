@@ -11,61 +11,16 @@
   <div class="container__articles">
     <div class="articles">
       <app-small-card
-        photoCover="../../../assets/me.jpg"
-        photoAlt="me"
-        cardAuthor="Daiana Michels • 14/10/2023"
-        cardTitle="Full Stack Developer"
-        cardDescription="Currently working as a Full Stack Developer at Pixeon."
-        [buttons]="['Read More', 'Code']"
-      >
-      </app-small-card>
-      <app-small-card
-        photoCover="../../../assets/me.jpg"
-        photoAlt="me"
-        cardAuthor="Daiana Michels • 14/10/2023"
-        cardTitle="Full Stack Developer"
-        cardDescription="Currently working as a Full Stack Developer at Pixeon."
-        [buttons]="['Read More', 'Code']"
-      >
-      </app-small-card>
-      <app-small-card
-        photoCover="../../../assets/me.jpg"
-        photoAlt="me"
-        cardAuthor="Daiana Michels • 14/10/2023"
-        cardTitle="Full Stack Developer"
-        cardDescription="Currently working as a Full Stack Developer at Pixeon."
-        [buttons]="['Read More', 'Code']"
-      >
-      </app-small-card>
-      <app-small-card
-        photoCover="../../../assets/me.jpg"
-        photoAlt="me"
-        cardAuthor="Daiana Michels • 14/10/2023"
-        cardTitle="Full Stack Developer"
-        cardDescription="Currently working as a Full Stack Developer at Pixeon."
-        [buttons]="['Read More', 'Code']"
-      >
-      </app-small-card>
-      <app-small-card
-        photoCover="../../../assets/me.jpg"
-        photoAlt="me"
-        cardAuthor="Daiana Michels • 10/10/2023"
-        cardTitle="Full Stack Developer"
-        cardDescription="Currently working as a Full Stack Developer at Pixeon."
-        [buttons]="['Read More', 'Code']"
-      >
-      </app-small-card>
-      <app-small-card
-        photoCover="../../../assets/me.jpg"
-        photoAlt="me"
-        cardAuthor="Daiana Michels • 01/10/2023"
-        cardTitle="Full Stack Developer"
-        cardDescription="Currently working as a Full Stack Developer at Pixeon."
-        [buttons]="['Read More', 'Code']"
-      >
-      </app-small-card>
+      *ngFor="let item of getItemsForPage(currentPage, itemsPerPage)"
+        [photoCover]="item.photoCover"
+        [photoAlt]="item.photoAlt"
+        [cardAuthor]="item.cardAuthor"
+        [cardTitle]="item.cardTitle"
+        [cardDescription]="item.cardDescription"
+        [idItem]="item.id"
+      ></app-small-card>
     </div>
-    <app-pagination></app-pagination>
+    <app-pagination [totalItems]="data.length" [itemsPerPage]="itemsPerPage" (pageChange)="onPageChange($event)"></app-pagination>
   </div>
 </div>
 <app-menu-footer></app-menu-footer>

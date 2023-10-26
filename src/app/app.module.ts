@@ -10,6 +10,7 @@ import { SmallCardComponent } from './components/small-card/small-card.component
 import { PaginationComponent } from './components/pagination/pagination.component';
 import { MenuFooterComponent } from './components/menu-footer/menu-footer.component';
 import { HomeComponent } from './pages/home/home.component';
+import { DetailsComponent } from './pages/details/details.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { HomeComponent } from './pages/home/home.component';
     SmallCardComponent,
     PaginationComponent,
     MenuFooterComponent,
-    HomeComponent
+    HomeComponent,
+    DetailsComponent
   ],
   imports: [
     BrowserModule,

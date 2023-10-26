@@ -9,16 +9,15 @@
 .container__articles {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 2.5rem;
+  gap: 3rem;
 }
 
 .articles {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  gap: 2rem;
+  gap: 3rem;
 }
 
 app-menu-footer {
-  margin-top: auto 0; /* Empurra o rodapé para a parte inferior da coluna */
+  margin-top: auto 0;
 }
