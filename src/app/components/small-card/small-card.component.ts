@@ -34,7 +34,6 @@ export class SmallCardComponent implements OnInit {
   }
 
   goToDetails(idItem: number) {
-    // Supondo que você tenha uma rota de detalhes com um parâmetro 'id'
     this.router.navigate(['/details', idItem]);
   }
 
