@@ -1,6 +1,8 @@
-# AngularBlog
+# Personal blog
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.6.
+## Layout
+
+The layout of this blog was inspired by a layout found on the dribbble platform.
 
 ## Development server
 
