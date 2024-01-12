@@ -11,6 +11,7 @@ import { PaginationComponent } from './components/pagination/pagination.componen
 import { MenuFooterComponent } from './components/menu-footer/menu-footer.component';
 import { HomeComponent } from './pages/home/home.component';
 import { DetailsComponent } from './pages/details/details.component';
+import { CardDetailsComponent } from './components/card-details/card-details.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { DetailsComponent } from './pages/details/details.component';
     PaginationComponent,
     MenuFooterComponent,
     HomeComponent,
-    DetailsComponent
+    DetailsComponent,
+    CardDetailsComponent
   ],
   imports: [
     BrowserModule,

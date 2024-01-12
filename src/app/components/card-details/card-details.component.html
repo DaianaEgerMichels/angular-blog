@@ -1,0 +1,14 @@
+<div class="container__card-details">
+    <div class="content-image">
+        <img src="{{ data.photoCover }}" alt="{{ data.photoAlt}}" />
+    </div>
+    <div class="content-info">
+        <div class="info">
+            <h1>{{ data.cardTitle }}</h1>
+            <p>{{ data.cardDescription }}</p>
+        </div>
+        <div class="buttons">
+            <button *ngFor="let button of data.buttons" :id="button"  (click)="redirect(button)">{{ button }}</button>
+        </div>
+    </div>
+</div>

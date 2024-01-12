@@ -71,7 +71,7 @@ export const dataFake = {
       buttons: ['Live', 'Code'],
       network: 'https://www.linkedin.com/in/daiana-eger-michels/',
       live: 'https://random-generator-number-bydai-michels.netlify.app/',
-      repo: 'https://github.com/DaianaEgerMichels/redux-book-store',
+      repo: 'https://github.com/DaianaEgerMichels/random-number-generator',
       info: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quidem!',
     },
     {

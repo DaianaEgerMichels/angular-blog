@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class DetailsComponent {
 
+  constructor() { }
+
+  goBack(): void {
+    window.history.back();
+  }
+
 }
