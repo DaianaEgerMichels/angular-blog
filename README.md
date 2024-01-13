@@ -1,4 +1,7 @@
 # Personal blog
+Welcome to my repository and blog, where I share a variety of projects I have been working on. Explore the various creations, from small scripts to more robust projects.
+
+The repository includes intuitive buttons that make it easy to access my social networks and my GitHub profile, allowing for easy and direct interaction. Additionally, some projects offer a live preview option, with links that direct you to the real-time implementation hosted on Netlify. Feel free to explore, collaborate, or reach out to share ideas and feedback. Thanks for visiting!
 
 ## Layout
 
